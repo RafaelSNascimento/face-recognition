@@ -1,0 +1,50 @@
+* {
+	border: 0;
+  box-sizing: border-box;
+  margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html, body {
+  background-color: #304ffe;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.experiment {
+  background-color: #edf2ff;
+  position: relative;
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .experiment {
+    width: 100%;
+  }
+}
+
+.experiment__video {
+  width: 100%;
+}
+
+.experiment__canvas {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
