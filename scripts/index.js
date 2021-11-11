@@ -4,7 +4,7 @@ window.onload = async () => {
   // pegamos o elemento canvas, onde vamos desenhar as notas detecções
   const canvasEl = document.getElementsByTagName('canvas')[0];
   // variável com o caminho onde os modelos estão localizados
-  const MODEL_URL = '../models';
+  const MODEL_URL = './models';
 
   // carregamos o modelo de detecção de faces
   await faceapi.nets.tinyFaceDetector.loadFromUri(MODEL_URL);
